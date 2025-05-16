@@ -27,3 +27,22 @@
     text-align: center; /* Center the text inside the paragraph */
     max-width: 80%; /* Optional: limit width for better readability */
 }
+
+.image {
+     display: flex;
+    flex-direction: column; /* Change to column to stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center; /* Ensures text inside is centered */
+}
+.image img{
+    width: 80vw;
+    margin: 10px 0;
+}
+
+.image video{
+    width: 80vw;
+    margin: 10px 0;
+}
