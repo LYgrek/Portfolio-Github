@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enzo Lou Yus</title>
+    <link rel="icon" href="./img/IconesELY.png" type="image/png">
+    <link rel="stylesheet" href="jackpot.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="aboutme.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navleft">
+                <a href="#home" class="smooth-scroll"><img class="logo" src="./img/Logo ELY 1.svg" alt=""></a>
+            </div>
+            <div class="navright">
+                <a href="#project" class="smooth-scroll"><p>Projects</p></a>
+                <a href="#aboutme" class="smooth-scroll"><p>About Me</p></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="jackpot" id="home">
+            <div class="container">
+                <div class="slot-machine" id="slotMachine"></div>
+            </div>
+        </section>
+        <section class="design">
+            <div class="animation-container">
+                <div class="word-slot">
+                    <div id="changing-word-container" class="word-container">
+                        <div class="word changing-word">WEB</div>
+                        <div class="word changing-word">BRAND</div>
+                        <div class="word changing-word">UI/UX</div>
+                        <div class="word changing-word">GRAPHIC</div>
+                    </div>
+                </div>
+                <div class="fixed-word">DESIGN</div>
+            </div>
+        </section>
+        <section class="projects" id="project">
+            <h2>Projects</h2>
+            <div class="projectgrid">
+                <a class="project1" href="ouroboros.html"><h2>Ouroboros</h2></a>
+                <a class="project2" href="posters.html"><h2>Posters</h2></a>
+            </div>
+        </section>
+        <section class="aboutme" id="aboutme">
+            <h2>About Me</h2>
+        </section>
+    </main>
+
+    <script type="module" src="./design.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script type="module" src="./jackpot.js"></script> 
+    <script type="module" src="./header.js"></script> 
+    <script src="https://unpkg.com/lenis@1.1.21/dist/lenis.min.js"></script>
+    <script type="module" src="./scrollauto.js"></script> 
+</body>
+</html>

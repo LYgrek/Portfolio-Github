@@ -1,0 +1,81 @@
+.jackpot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Blackheat";
+    src: url("./fonts/Blackheat.otf");
+    src: url("./fonts/Blackheat.ttf");
+}
+
+.slot-machine {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    transform: scale(1.6); /* Taille globale légèrement réduite pour compenser les marges */
+}
+
+/* Nouveau conteneur flex pour les slots et séparateurs */
+.slot-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Nouvelle définition pour les lignes verticales - maintenant plus responsive */
+.slot-divider {
+    width: 1px;
+    height: 11vw;
+    background-color: #E89005; /* Jaune */
+    margin: 0 2px; /* Petit espacement horizontal */
+}
+
+.slot {
+    width: 8vw; /* Largeur */
+    height: 11vw; /* Hauteur */
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Marges supplémentaires pour les premières et dernières boîtes */
+.slot:first-child {
+    margin-left: 40px;
+}
+
+.slot:last-child {
+    margin-right: 40px;
+}
+
+.letter-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: top 0.5s ease-in-out;
+    text-align: center;
+}
+
+.letter {
+    height: 13vw; /* Hauteur en vw */
+    line-height: 13vw; /* Ligne adaptée à la hauteur */
+    font-size: 9vw; /* Taille de police */
+    color: #E2E2E2;
+    font-family: Blackheat, sans-serif;
+}
+
+/* Nouvelle classe pour les lettres finales en rouge */
+.letter.final {
+    color: #FF0000;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}

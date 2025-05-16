@@ -1,0 +1,84 @@
+body {
+    background-image: url("./img/Background.jpg");
+    margin: 40px;
+    background-repeat: no-repeat;
+    background-size: cover; /* pour que l’image remplisse tout sans se répéter */
+    background-position: center;
+}
+
+@font-face {
+    font-family: "OverusedGrotesk-Medium";
+    src: url("./fonts/OverusedGrotesk-Medium.ttf");
+}
+
+header {
+    position: fixed;
+    width: calc(100% - 80px); /* Pour compenser les marges du body */
+    z-index: 99999999999;
+}
+
+/* Animation pour la navbar */
+@keyframes navbarFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+    /* Appliquer l'animation */
+    animation: navbarFadeIn 1s ease-out forwards;
+}
+
+/* Animation décalée pour les éléments de navigation */
+.navleft {
+    animation: navbarFadeIn 1s ease-out 0.2s backwards;
+}
+
+.navright a {
+    opacity: 0;
+    animation: navbarFadeIn 1s ease-out forwards;
+}
+
+/* Décaler légèrement l'animation pour chaque lien */
+.navright a:nth-child(1) {
+    animation-delay: 0.4s;
+}
+
+.navright a:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+/* Reste de votre CSS original */
+.navright {
+    display: flex;
+    gap: 30px;
+}
+
+.logo {
+    height: 60px;
+}
+
+.navbar p {
+    font-family: OverusedGrotesk-Medium;
+    font-size: 16px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #E2E2E2;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}

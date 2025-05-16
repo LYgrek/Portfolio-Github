@@ -1,0 +1,74 @@
+.design {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Blackheat, sans-serif;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.animation-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.changing-word, .fixed-word {
+  font-size: 10rem; /* Taille de police augmentée */
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px;
+  -webkit-text-fill-color: transparent;
+  line-height: 1; /* Ajout pour un meilleur espacement */
+}
+
+.changing-word {
+  -webkit-text-stroke-color: #E89005; /* Orange */
+}
+
+.fixed-word {
+  -webkit-text-stroke-color: #FF0000; /* Rouge */
+}
+
+.word-slot {
+  /* Hauteur ajustée pour correspondre exactement à la taille de police */
+  height: 5rem;
+  overflow: hidden;
+}
+
+.word-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.word {
+  /* Ajustement exact pour éviter la superposition */
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styles responsifs pour différentes tailles d'écran */
+@media (max-width: 768px) {
+  .changing-word, .fixed-word {
+      font-size: 3.5rem;
+  }
+  
+  .word-slot, .word {
+      height: 3.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .changing-word, .fixed-word {
+      font-size: 2.5rem;
+  }
+  
+  .word-slot, .word {
+      height: 2.5rem;
+  }
+}

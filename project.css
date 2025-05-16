@@ -1,0 +1,85 @@
+.projects {
+    font-family: OverusedGrotesk-Medium;
+    font-size: 22px;
+    margin-top: 40px;
+    color: #E2E2E2;
+}
+
+.projectgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 0px;
+    }
+    
+    .project1 { grid-area: 1 / 1 / 2 / 2; }
+    .project2 { grid-area: 1 / 2 / 2 / 3; 
+}
+
+.project1, .project2 {
+    opacity: 1;
+    position: relative;
+    overflow: hidden; /* Cache tout contenu dépassant /
+    height: 100vh; / Assure que la div prend toute la hauteur de la fenêtre */
+    text-decoration: none;
+    color: #E2E2E2;
+}
+
+.project1::before {
+    background: url('./img/ouroboros/logo.png');
+    background-repeat: no-repeat;
+    background-size: cover; /* pour que l’image remplisse tout sans se répéter */
+    background-position: center;
+}
+.project2::before {
+    background: url('./img/affiche/logo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* pour que l’image remplisse tout sans se répéter */
+    background-position: center;
+}
+
+.project1::before,.project2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    transition: transform 0.5s ease;
+}
+
+.project1:hover::before,.project2:hover::before {
+    transform: scale(1.1);
+}
+
+
+
+.project1,.project2 {
+    height: 55vh;
+    border-radius: 30px;
+    transition: all 0.3s ;
+
+}
+
+.project1, .project2 {
+    opacity: 1;
+}
+
+
+.project1:hover,.project2:hover {
+    scale: 1.02;
+}
+
+.project1 h2, .project2 h2 {
+    position: relative;
+    background-color: #121212b0;
+    border-radius: 25px;
+    display: inline-block;
+    padding: 5px 15px;
+    margin-left: 20px;
+    font-size: 20px;
+}
