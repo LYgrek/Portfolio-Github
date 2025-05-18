@@ -57,6 +57,16 @@
   .changing-word, .fixed-word {
       font-size: 3.5rem;
   }
+
+  .changing-word {
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #E89005;
+  }
+
+  .fixed-word {
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #FF0000;
+  }
   
   .word-slot, .word {
       height: 3.5rem;
@@ -65,10 +75,19 @@
 
 @media (max-width: 480px) {
   .changing-word, .fixed-word {
-      font-size: 2.5rem;
+      font-size: 4.5rem;
+  }
+  .changing-word {
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #E89005;
+  }
+
+  .fixed-word {
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #FF0000;
   }
   
   .word-slot, .word {
-      height: 2.5rem;
+      height: 4.5rem;
   }
 }
