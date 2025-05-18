@@ -2,8 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    height: 30vh;
+    margin: 100px 0px;
+    padding: 100px 0px;
 }
 
 @font-face {
@@ -78,4 +79,18 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+}
+
+@media (max-width: 765px) {
+  .jackpot {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .jackpot {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+  }
 }
