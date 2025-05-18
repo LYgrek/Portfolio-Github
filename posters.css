@@ -53,7 +53,7 @@
     text-align: center; /* Ensures text inside is centered */
 }
 .image img{
-    width: 30vw;
+    width: 580px;
     margin: 0px 20px;
 }
 
@@ -68,6 +68,10 @@
         max-width: 90%;
         -webkit-text-stroke: 1px;
     }
+    .image img {
+        width: 300px;
+        margin: 0px 10px;
+    }
 }
 
 /* Media query pour les très petits écrans */
@@ -80,5 +84,9 @@
         font-size: 82px;
         max-width: 90%;
         -webkit-text-stroke: 1px;
+    }
+    .image img {
+        width: 290px;
+        margin: 0px 10px;
     }
 }
