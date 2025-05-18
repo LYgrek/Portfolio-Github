@@ -1,0 +1,43 @@
+.posters {
+    display: flex;
+    flex-direction: column; /* Change to column to stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center; /* Ensures text inside is centered */
+}
+
+.posters h1{
+  font-family: Blackheat, sans-serif;
+  color: #FF0000;
+  font-size: 16vw;
+  font-weight: normal;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px;
+  -webkit-text-fill-color: transparent;
+  line-height: 1; /* Ajout pour un meilleur espacement */
+  margin: 40px 0 0 0;
+}
+
+.posters p {
+    font-family: OverusedGrotesk-Medium;
+    font-size: 1.2vw;
+    color: #E2E2E2;
+    text-align: center; /* Center the text inside the paragraph */
+    max-width: 80%; /* Optional: limit width for better readability */
+}
+
+.image {
+    display: flex;
+    flex-direction: row; /* Change to column to stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center; /* Ensures text inside is centered */
+}
+.image img{
+    width: 30vw;
+    margin: 0px 20px;
+}
