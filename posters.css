@@ -8,16 +8,29 @@
     text-align: center; /* Ensures text inside is centered */
 }
 
+@keyframes postersFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .posters h1{
-  font-family: Blackheat, sans-serif;
-  color: #FF0000;
-  font-size: 16vw;
-  font-weight: normal;
-  text-transform: uppercase;
-  -webkit-text-stroke: 2px;
-  -webkit-text-fill-color: transparent;
-  line-height: 1; /* Ajout pour un meilleur espacement */
-  margin: 40px 0 0 0;
+    font-family: Blackheat, sans-serif;
+    color: #FF0000;
+    font-size: 16vw;
+    font-weight: normal;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px;
+    -webkit-text-fill-color: transparent;
+    line-height: 1; /* Ajout pour un meilleur espacement */
+    margin: 40px 0 0 0;
+
+    animation: postersFadeIn 1s ease-out forwards;
 }
 
 .posters p {
@@ -26,6 +39,8 @@
     color: #E2E2E2;
     text-align: center; /* Center the text inside the paragraph */
     max-width: 80%; /* Optional: limit width for better readability */
+
+    animation: postersFadeIn 1s ease-out forwards;
 }
 
 .image {
@@ -41,3 +56,5 @@
     width: 30vw;
     margin: 0px 20px;
 }
+
+
