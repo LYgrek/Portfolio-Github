@@ -29,6 +29,7 @@
     -webkit-text-fill-color: transparent;
     line-height: 1; /* Ajout pour un meilleur espacement */
     padding: 40px 0 0 0;
+    margin: 0;
 
     animation: ouroborosFadeIn 1s ease-out forwards;
 }
