@@ -74,7 +74,7 @@ header {
 
 .navbar p {
     font-family: OverusedGrotesk-Medium;
-    font-size: 16px;
+    font-size: 26px;
 }
 
 .navbar a {
@@ -85,4 +85,17 @@ header {
 
 .navbar a:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar p {
+        font-size: 16px;
+    }
+}
+
+/* Media query pour les très petits écrans */
+@media screen and (max-width: 480px) {
+    .navbar p {
+        font-size: 16px;
+    }
 }

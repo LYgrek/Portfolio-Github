@@ -4,3 +4,122 @@
     margin-top: 40px;
     color: #E2E2E2;
 }
+
+#me {
+    width: 20vw;
+    border-radius: 30px;
+}
+
+.presentation {
+    display: flex;
+    gap: 50px;
+}
+
+.flex {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.skill img {
+    height: 100px;
+}
+
+.skill {
+    display: flex;
+    gap: 20px;
+}
+
+.mail img {
+    height: 35px;
+}
+
+.mail {
+    margin-bottom: 20px;
+    padding-right: 70%;
+}
+.loc {
+    margin-bottom: 20px;
+    padding-right: 85%;
+}
+
+.mail a{
+    text-decoration: none;
+    color: #E2E2E2;
+    transition: all 0.3s ease-in-out;
+}
+
+.mail a:hover {
+    text-decoration: underline;
+}
+
+.loc img {
+    height: 55px;
+}
+
+.devcodeone {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ican {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.langue {
+    display: flex;
+    align-items: center;
+}
+
+.parent {
+display: grid;
+grid-template-rows: 1fr;
+grid-column-gap: 100px;
+grid-row-gap: 25px;
+}
+
+.contact { grid-area: 1 / 1 / 2 / 2; }
+.experiences { grid-area: 1 / 2 / 2 / 3; }
+.skills { grid-area: 2 / 1 / 3 / 2; }
+.languages { grid-area: 3 / 1 / 4 / 2; }
+.formation { grid-area: 2 / 2 / 4 / 3; }
+
+@media screen and (max-width: 768px) {
+    .presentation {
+        display: inline;
+    }
+    .parent {
+        display: inline;
+    }
+    .skill {
+        display: inline;
+    }
+    .devcodeone {
+        display: inline;
+    }
+    .ican {
+        display: inline;
+    }
+}
+
+/* Media query pour les très petits écrans */
+@media screen and (max-width: 480px) {
+    .presentation {
+        display: inline;
+    }
+    .parent {
+        display: inline;
+    }
+    .skill {
+        display: inline;
+    }
+    .devcodeone {
+        display: inline;
+    }
+    .ican {
+        display: inline;
+    }
+}
