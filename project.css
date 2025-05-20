@@ -83,3 +83,21 @@
     margin-left: 20px;
     font-size: 20px;
 }
+
+@media screen and (max-width: 768px) {
+    .project1, .project2 {
+        height: 200px;
+    }
+    .project1 h2, .project2 h2 {
+        margin-left: 0px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+    }
+}
+
+/* Media query pour les très petits écrans */
+@media screen and (max-width: 480px) {
+
+}
