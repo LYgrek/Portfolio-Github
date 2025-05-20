@@ -29,14 +29,14 @@
     -webkit-text-fill-color: transparent;
     line-height: 1; /* Ajout pour un meilleur espacement */
     padding: 40px 0 0 0;
-    margin: 0<;
+    margin: 0;
 
     animation: ouroborosFadeIn 1s ease-out forwards;
 }
 
 .ouroboros p {
     font-family: OverusedGrotesk-Medium;
-    font-size: 20px;
+    font-size: 1.2vw;
     color: #E2E2E2;
     text-align: center; /* Center the text inside the paragraph */
     max-width: 80%; /* Optional: limit width for better readability */
